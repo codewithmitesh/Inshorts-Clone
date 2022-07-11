@@ -1,13 +1,13 @@
 // ES6 Imports (latest imports and to use we add module in package.json 
 import express from 'express';
+import path from 'path';
 // to resolve cors issue of backend eg. to run the different servers front and backend on localhost 
-const path = require('path');
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv'
 //components
 // import Connection from './connection/db.js';
-// import Route from './routes/Route.js';
+import Route from './routes/Route.js';
 // import DefaultData from './default.js'
 
 const port = process.env.PORT || 8000;
@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-// app.use('/', Route);
+app.use('/', Route);
 
 
 // Heroku Deployment

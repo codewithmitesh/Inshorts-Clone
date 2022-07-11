@@ -7,7 +7,7 @@ const url = `https://newsapi.org/v2/everything?q=Apple&from=2022-07-08&sortBy=po
 export const getNews = async (request, response) => {
     try {
         const respon = await axios.get(url);
-        console.log(respon.data);
+        // console.log(respon.data);
         response.send(respon.data);
 
     } catch (error) {
