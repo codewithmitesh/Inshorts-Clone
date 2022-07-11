@@ -35,7 +35,3 @@ if (process.env.NODE_ENV === "production") {
 
 app.listen(PORT,
     () => console.log(`Server is running successfully on PORT ${PORT}`));
-
-// DefaultData();
-
-/**News ApI key :- 356800ee65934fd3b1b6e9b871d7388d */
