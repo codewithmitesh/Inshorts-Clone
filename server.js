@@ -35,3 +35,7 @@ if (process.env.NODE_ENV === "production") {
 
 app.listen(PORT,
     () => console.log(`Server is running successfully on PORT ${PORT}`));
+
+    /**
+     * Changed the name to frontend
+     */
