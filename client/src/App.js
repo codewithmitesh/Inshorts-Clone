@@ -18,7 +18,7 @@ const Container = styled(Box)(({ theme }) => ({
 
 function App() {
   return (
-    <Box>
+    <Box to="/">
       <Header />
       <Container>
         <InfoHeader />

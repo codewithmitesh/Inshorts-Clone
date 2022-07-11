@@ -6,9 +6,10 @@ import bodyParser from 'body-parser';
 import dotenv from 'dotenv'
 //components
 // import Connection from './connection/db.js';
-import Route from './routes/Route.js';
+// import Route from './routes/Route.js';
 // import DefaultData from './default.js'
 
+const PORT = process.env.PORT || 8000;
 const app = express();
 dotenv.config();
 
@@ -17,9 +18,8 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-app.use('/', Route);
+// app.use('/', Route);
 
-const PORT = process.env.PORT || 8000;
 
 // Heroku Deployment
 
