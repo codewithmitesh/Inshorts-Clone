@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:8000';
+const URL = '';
 
 // requesting data from the server
 export const getNews = async () => {
