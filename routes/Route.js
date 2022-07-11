@@ -6,6 +6,8 @@ import {
 
 const route = express.Router();
 
+
+// routs general
 route.get("/news", getNews);
 
 export default route;
