@@ -1,7 +1,7 @@
 // import News from '../model/news.js';
 import axios from 'axios';
 
-const url = `https://newsapi.org/v2/everything?q=Apple&from=2022-07-08&sortBy=popularity&apiKey=356800ee65934fd3b1b6e9b871d7388d`;
+const url = `https://newsapi.org/v2/everything?q=apple&from=2022-10-02&to=2022-12-02&sortBy=popularity&apiKey=356800ee65934fd3b1b6e9b871d7388d`;
 
 // this is call back function and acts as an api for the frontend
 export const getNews = async (request, response) => {
