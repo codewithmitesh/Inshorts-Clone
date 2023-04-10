@@ -9,7 +9,6 @@ export const getNews = async () => {
         const ans = await axios.get(`${URL}/news`);
         // console.log(ans);
         return ans.data.articles;
-
     } catch (error) {
         console.log('error while calling getNews API', error);
     }
